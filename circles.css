@@ -1,9 +1,9 @@
 canvas {
   width: 100%;
-  background: black;
+  background: slategray;
 }
 
-body, html {
+html, body {
   height: 100%;
   margin: 0;
 }
