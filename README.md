@@ -1,5 +1,5 @@
 
-## [CLICK ME](http://www.cristineshipman.com/patatap/ "patatap page") to see the live project.
+## [CLICK ME](http://www.cristineshipman.com/patatap/ "patatap page") to see the live project. Click different keys to hear different sounds. 
 
 ## Created a clone of the patatap app.
 
