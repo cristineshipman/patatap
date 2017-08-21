@@ -118,6 +118,54 @@
         sound: new Howl({
           src: ['sounds/splits.mp3']
         })
+      },
+      p: {
+        color: "coral",
+        sound: new Howl({
+          src: ['sounds/squiggle.mp3']
+        })
+      },
+      z: {
+        color: "CadetBlue",
+        sound: new Howl({
+          src: ['sounds/strike.mp3']
+        })
+      },
+      x: {
+        color: "Crimson",
+        sound: new Howl({
+          src: ['sounds/suspension.mp3']
+        })
+      },
+      c: {
+        color: "DarkCyan",
+        sound: new Howl({
+          src: ['sounds/timer.mp3']
+        })
+      },
+      v: {
+        color: "DarkSeaGreen",
+        sound: new Howl({
+          src: ['sounds/ufo.mp3']
+        })
+      },
+      b: {
+        color: "HotPink",
+        sound: new Howl({
+          src: ['sounds/veil.mp3']
+        })
+      },
+      n: {
+        color: "LightGreen",
+        sound: new Howl({
+          src: ['sounds/wipe.mp3']
+        })
+      },
+      m: {
+        color: "PapayaWhip",
+        sound: new Howl({
+          src: ['sounds/zig-zag.mp3']
+        })
       }
     }
 
@@ -136,11 +184,17 @@
   }
 
     function onFrame(event){
-      for(var i = 0; i < circles.length; i++){
-        circles[i].fillColor.hue +=1;
-        circles[i].scale(.9);
+    for(var i = 0; i < circles.length; i++){
+      circles[i].scale(0.9);
+      circles[i].fillColor.hue += 1;
+      if(circles[i].area < 1){
+        circles[i].remove();
+        circles.splice(i, 1);
+        i--;
+        console.log(circles);
       }
     }
+  }
 
 
   </script>
